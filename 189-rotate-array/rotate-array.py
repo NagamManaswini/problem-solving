@@ -3,9 +3,7 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        i=0
-        while i<k:
-            nums.insert(0,nums[-1])
-            nums.pop(-1)
-            i+=1
+        k=k%len(nums)
+        nums[:]=nums[-k:]+nums[:-k]
+        return nums
         
