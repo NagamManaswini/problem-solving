@@ -3,13 +3,13 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        slow = 0
-        for fast in range(len(nums)):
-            if nums[fast] != 0 and nums[slow] == 0:
-                nums[slow], nums[fast] = nums[fast], nums[slow]
-
-            # wait while we find a non-zero element to
-            # swap with you
-            if nums[slow] != 0:
-                slow += 1
+        temp=[]
+        for x in range(len(nums)):
+            if nums[x]!=0:
+                temp.append(nums[x])
+        for x in range(len(nums)):
+            if nums[x]==0:
+                temp.append(nums[x])
+        nums[:]=temp
+        
         
