@@ -11,5 +11,5 @@ class Solution:
             if nums[x]==0:
                 temp.append(nums[x])
         nums[:]=temp
-        
+        return nums
         
