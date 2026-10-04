@@ -4,12 +4,12 @@ class Solution:
         Do not return anything, modify nums in-place instead.
         """
         temp=[]
-        for x in range(len(nums)):
-            if nums[x]!=0:
-                temp.append(nums[x])
-        for x in range(len(nums)):
-            if nums[x]==0:
-                temp.append(nums[x])
+        for i in range(len(nums)):
+            if nums[i]!=0:
+                temp.append(nums[i])
+        for i in range(len(nums)):
+            if nums[i]==0:
+                temp.append(nums[i])
         nums[:]=temp
-        return nums
         
+        return nums
