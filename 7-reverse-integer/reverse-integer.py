@@ -6,7 +6,5 @@ class Solution:
         else:
             rev=int(str(x)[::-1])
         if rev>2**31-1 or rev<-2**31:
-            rev= 0
+            return 0
         return rev
-       
-       
