@@ -1,14 +1,12 @@
 class Solution:
     def findDuplicate(self, nums: List[int]) -> int:
-        freq={}
+        n={}
         for i in nums:
-            if i not in freq:
-                freq[i]=1
+            if i not in n:
+                n[i]=1
             else:
-                freq[i]+=1
-        for i in freq:
-            if freq[i]>1:
+                n[i]+=1
+        for i in n:
+            if n[i]>1:
                 return i
-
-        
         
