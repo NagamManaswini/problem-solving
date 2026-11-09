@@ -1,8 +1,12 @@
 class Solution:
-    def missingNumber(self, nums: List[int]) -> int:
-        n=len(nums)
-        x=(n*(n+1))//2
-        sum=0
-        for i in nums:
-            sum+=i
-        return x-sum
+    def missingNumber(self, nums: list[int]) -> int:
+        x=0
+        y=len(nums)
+        for i in range(len(nums)):
+            x+=nums[i]
+        z=(y*(y+1))//2
+        return z-x
+            
+
+
+        
