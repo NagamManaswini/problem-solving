@@ -7,4 +7,3 @@ class Solution:
         if count>=2:
             return False
         return True
-        
